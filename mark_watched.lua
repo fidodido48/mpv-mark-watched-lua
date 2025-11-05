@@ -42,8 +42,8 @@ local function load_existing_ids()
         if id and is_valid_yt_id(id) then existing_ids[id] = true end
     end
     if f then f:close() end
-    local count = 0 for _ in pairs(existing_ids) do count = count + 1 end
     msg.info("Loaded " .. tostring(count) .. " existing IDs")
+    local count = 0 for _ in pairs(existing_ids) do count = count + 1 end
 end
 
 -- extraction helpers
@@ -133,7 +133,7 @@ local function append_id_to_file(id)
 
     appended_ids[id] = true
     existing_ids[id] = true
-    msg.info("Appended id: " .. id)
+    msg.info("Appended ID: " .. id)
     return true
 end
 
