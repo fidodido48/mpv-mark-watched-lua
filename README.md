@@ -49,7 +49,7 @@ If all is good you should see similiar output in the terminal:
 ```
 [mark_watched] YT ID (from path): fPPcH_dC8LE
 [mark_watched] Loaded 60188 existing IDs
-[mark_watched] Appended id: fPPcH_dC8LE
+[mark_watched] Appended ID: fPPcH_dC8LE
 ```
 
 2nd shortcut key press/file EOF reached: 
