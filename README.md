@@ -16,7 +16,9 @@ __INSTALLATION__
 2. Make sure to put the script in the proper mpv's scripts dir 
 (```$HOME/.config/mpv/scripts/mark_watched.lua```)
 
-3. [REQUIRED!] EDIT SCRIPT FILE AND ADD YOUR PROPER ARCHIVE FILE PATH/LOCATION. You can customize the shortcut as well, if you want. Default is "```Ctrl+Y```" (case-sensitive!)
+3. EDIT SCRIPT FILE AND ADD YOUR PROPER ARCHIVE FILE PATH/LOCATION. 
+You can customize the shortcut as well, if you want. 
+Default is "```Ctrl+Y```" (case-sensitive)
 
 ```
 -- USER CONFIGURATION
@@ -28,6 +30,7 @@ local SHORTCUT_KEY = "Ctrl+Y"
 ```
 
 4. Run '```mpv --msg-debug=mark_watched=debug```' to check/debug/troubleshoot. 
+
 If all is good you should see similiar output in the terminal:
 
 ```
@@ -38,7 +41,7 @@ If all is good you should see similiar output in the terminal:
 [mark_watched] Archive file used: .../ytdlp_archive.txt
 ```
 
-After usage there will be similiar output to this:
+__USAGE__
 
 1st shortcut key press/file EOF reached:
 ```
