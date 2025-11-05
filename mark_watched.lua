@@ -7,8 +7,13 @@
 local mp = require "mp"
 local msg = require "mp.msg"
 
--- CONFIG: change this path if desired
-local ARCHIVE_FILE = os.getenv("HOME") .. "/gdrive_crypt/docs/ytdlp_archive.txt"
+-- [CHANGE ME!] USER CONFIGURATION
+-- SET YOUR YT-DLP ARCHIVE FILE PROPER PATH/LOCATION
+local ARCHIVE_FILE = "/path/to/ytdlp_archive.txt"
+-- SET YOUR PREFERRED SHORTCUT KEY(S)
+local SHORTCUT_KEY = "Ctrl+Y"
+-- [CHANGE ME!] END OF USER CONFIGURATION
+
 
 -- in-memory sets
 local existing_ids = {}
