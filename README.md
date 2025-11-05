@@ -11,9 +11,10 @@ __INSTALLATION__
 
 1. Git clone repo 
 ```git clone https://github.com/fidodido48/mpv-mark-watched-lua.git $HOME/.config/mpv/scripts/mark_watched.lua```
-2. Put the script in the proper mpv's scripts dir 
+2. Make sure to put the script in the proper mpv's scripts dir 
 (```$HOME/.config/mpv/scripts/mark_watched.lua```)
 3. [REQUIRED!] EDIT SCRIPT FILE AND ADD YOUR PROPER ARCHIVE FILE PATH/LOCATION.
+
 3.1 [OPTIONAL] You can customize the shortcut as well, if you want. Default is "```Ctrl+Y```" (case-sensitive!)
 4. Run '```mpv --msg-debug=mark_watched=debug```' to check/debug/troubleshoot. 
 If all is good you should see similiar output in the terminal:
@@ -24,14 +25,27 @@ If all is good you should see similiar output in the terminal:
 [mark_watched] loading file .config/mpv/scripts/mark_watched.lua
 [mark_watched] Loaded 60188 existing IDs
 [mark_watched] Archive file used: .../ytdlp_archive.txt
-[...]
+```
+
+After usage there will be similiar output to this:
+
+1st shortcut key press/file EOF reached:
+```
 [mark_watched] YT ID (from path): fPPcH_dC8LE
 [mark_watched] Loaded 60188 existing IDs
 [mark_watched] Appended id: fPPcH_dC8LE
+```
+
+2nd shortcut key press/file EOF reached: 
+```
 [input] No key binding found for key 'Ctrl+y'.
 [mark_watched] YT ID (from path): fPPcH_dC8LE
 [mark_watched] Loaded 60189 existing IDs
 [mark_watched] ID already present (skipping): fPPcH_dC8LE
+```
+
+3rd and n-th shortcut key presses/file EOF reached:
+```
 [mark_watched] YT ID (from path): fPPcH_dC8LE
 [mark_watched] Loaded 60189 existing IDs
 [mark_watched] ID already present (skipping): fPPcH_dC8LE
