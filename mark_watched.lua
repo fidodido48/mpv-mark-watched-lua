@@ -7,12 +7,12 @@
 local mp = require "mp"
 local msg = require "mp.msg"
 
--- [CHANGE ME!] USER CONFIGURATION
+-- USER CONFIGURATION
 -- SET YOUR YT-DLP ARCHIVE FILE PROPER PATH/LOCATION
-local ARCHIVE_FILE = "/path/to/ytdlp_archive.txt"
+local ARCHIVE_FILE = os.getenv("HOME") .. "/gdrive_crypt/docs/ytdlp_archive.txt"
 -- SET YOUR PREFERRED SHORTCUT KEY(S)
 local SHORTCUT_KEY = "Ctrl+Y"
--- [CHANGE ME!] END OF USER CONFIGURATION
+-- END OF USER CONFIGURATION
 
 
 -- in-memory sets
@@ -147,7 +147,7 @@ mp.register_event("end-file", function(event)
     if id then append_id_to_file(id) end
 end)
 
-mp.add_key_binding("Ctrl+Y", "archive-yt-id-now", function()
+mp.add_key_binding(SHORTCUT_KEY, "archive-yt-id-now", function()
     local id = find_youtube_id()
     if id then append_id_to_file(id) end
 end)
