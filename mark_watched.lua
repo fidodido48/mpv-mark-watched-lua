@@ -9,7 +9,7 @@ local msg = require "mp.msg"
 
 -- USER CONFIGURATION
 -- SET YOUR YT-DLP ARCHIVE FILE PROPER PATH/LOCATION
-local ARCHIVE_FILE = os.getenv("HOME") .. "/gdrive_crypt/docs/ytdlp_archive.txt"
+local ARCHIVE_FILE = "/path/to/ytdlp_archive.txt"
 -- SET YOUR PREFERRED SHORTCUT KEY(S)
 local SHORTCUT_KEY = "Ctrl+Y"
 -- END OF USER CONFIGURATION

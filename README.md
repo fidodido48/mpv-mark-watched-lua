@@ -10,12 +10,22 @@ Mpv's lua script for marking YT URLs watched after finished playback (at end-of-
 __INSTALLATION__
 
 1. Git clone repo 
+
 ```git clone https://github.com/fidodido48/mpv-mark-watched-lua.git $HOME/.config/mpv/scripts/mark_watched.lua```
 2. Make sure to put the script in the proper mpv's scripts dir 
 (```$HOME/.config/mpv/scripts/mark_watched.lua```)
-3. [REQUIRED!] EDIT SCRIPT FILE AND ADD YOUR PROPER ARCHIVE FILE PATH/LOCATION.
 
-3.1 [OPTIONAL] You can customize the shortcut as well, if you want. Default is "```Ctrl+Y```" (case-sensitive!)
+3. [REQUIRED!] EDIT SCRIPT FILE AND ADD YOUR PROPER ARCHIVE FILE PATH/LOCATION. You can customize the shortcut as well, if you want. Default is "```Ctrl+Y```" (case-sensitive!)
+
+```
+-- USER CONFIGURATION
+-- SET YOUR YT-DLP ARCHIVE FILE PROPER PATH/LOCATION
+local ARCHIVE_FILE = "/path/to/ytdlp_archive.txt"
+-- SET YOUR PREFERRED SHORTCUT KEY(S)
+local SHORTCUT_KEY = "Ctrl+Y"
+-- END OF USER CONFIGURATION
+```
+
 4. Run '```mpv --msg-debug=mark_watched=debug```' to check/debug/troubleshoot. 
 If all is good you should see similiar output in the terminal:
 
