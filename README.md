@@ -12,6 +12,7 @@ __INSTALLATION__
 1. Git clone repo 
 
 ```git clone https://github.com/fidodido48/mpv-mark-watched-lua.git $HOME/.config/mpv/scripts/mark_watched.lua```
+
 2. Make sure to put the script in the proper mpv's scripts dir 
 (```$HOME/.config/mpv/scripts/mark_watched.lua```)
 
