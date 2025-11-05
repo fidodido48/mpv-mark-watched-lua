@@ -5,13 +5,13 @@ __INTRODUCTION__
 Mpv's lua script for marking YT URLs watched after each URLs finished playback (at end-of-file event - EOF). It has some 'smart' capabilities: 
 1. Doesn't mark URLs interrupted early (only on shortcut press or file EOF)
 2. Doesn't duplicate archive file entries (skips in that case)
-3. Although it does add IDs automatically, you can force manual add by pressing shortcut key (**"Ctrl+Y"** by default) if you wish so (still skipped for duplicates tho).
+3. Although it does add IDs automatically, you can force manual add by pressing shortcut key (**"Ctrl+Y"** by default) if you wish so.
 
 __INSTALLATION__
 
 1. Git clone repo 
 
-```git clone https://github.com/fidodido48/mpv-mark-watched-lua.git $HOME/.config/mpv/scripts/mark_watched.lua```
+```git clone https://github.com/fidodido48/mpv-mark-watched-lua.git $HOME/.config/mpv/scripts```
 
 2. Make sure to put the script in the proper mpv's scripts dir 
 (```$HOME/.config/mpv/scripts/mark_watched.lua```)
@@ -28,8 +28,9 @@ local ARCHIVE_FILE = "/path/to/ytdlp_archive.txt"
 local SHORTCUT_KEY = "Ctrl+Y"
 -- END OF USER CONFIGURATION
 ```
+__USAGE/TESTING__
 
-4. Run '```mpv --msg-debug=mark_watched=debug```' to check/debug/troubleshoot. 
+Run '```mpv --msg-debug=mark_watched=debug```' to check/debug/troubleshoot. 
 
 If all is good you should see similiar output in the terminal:
 
@@ -40,8 +41,6 @@ If all is good you should see similiar output in the terminal:
 [mark_watched] Loaded 60188 existing IDs
 [mark_watched] Archive file used: .../ytdlp_archive.txt
 ```
-
-__USAGE__
 
 1st shortcut key press/file EOF reached:
 ```
