@@ -9,6 +9,7 @@ Mpv's lua script for marking YT URLs watched after each URLs finished playback (
 - Although it does add IDs automatically, you can force manual add by pressing shortcut key (**"Ctrl+Y"** by default) if you wish so.
 
 __REQUIREMENTS__
+----------------
 
 - mpv
 - yt-dlp
