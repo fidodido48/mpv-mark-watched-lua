@@ -1,5 +1,5 @@
 --[[
-  MPV Lua Script
+  mark_watched.lua Lua Script
   Copyright (c) 2025 fidodido48
 
   This program is free software: you can redistribute it and/or modify
