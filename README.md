@@ -3,10 +3,16 @@ _MARK_WATCHED.LUA_ _MPV_ _SCRIPT_
 __INTRODUCTION__
 ----------------
 
-Mpv's lua script for marking YT URLs watched after each URLs finished playback (at end-of-file event - EOF). It has some 'smart' capabilities: 
+Mpv's lua script for marking YT URLs watched after each URLs finished playback (at end-of-file event - EOF). Its designed for mpv/yt-dlp combo (internal mpv's ytdl_hook). Easily resume watching/streaming your playlists from the last left-off point. It has some 'smart' capabilities: 
 - Doesn't mark URLs interrupted early (only on shortcut press or file EOF)
 - Doesn't duplicate archive file entries (skips in that case)
 - Although it does add IDs automatically, you can force manual add by pressing shortcut key (**"Ctrl+Y"** by default) if you wish so.
+
+__REQUIREMENTS__
+
+- mpv
+- yt-dlp
+- your own yt-dlp's archive_file.txt
 
 __INSTALLATION__
 ----------------
