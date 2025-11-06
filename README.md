@@ -76,4 +76,11 @@ If all is good you should see similiar output in the terminal:
 [mark_watched] Loaded 60189 existing IDs
 [mark_watched] ID already present (skipping): fPPcH_dC8LE
 ```
+
+__DISCLAIMER__
+--------------
+
+© 2025 fidodido48. This MPV Lua script is licensed under the GNU General Public License v3.0 (GPLv3).
+You are free to use, modify, and distribute this code under the terms of the GPLv3. See the LICENSE file for details.
+
 -----------------------------------------------------------------------

@@ -1,5 +1,23 @@
--- archive_yt_id.lua
--- Appends YouTube IDs on EOF or manual keypress.
+--[[
+  MPV Lua Script
+  Copyright (c) 2025 fidodido48
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+]]
+
+-- mark_watched.lua
+-- Appends YouTube IDs on EOF or manual keypress to the archive file effectively marking them watched.
 -- Deduplicates across mpv sessions by reading existing file on startup.
 -- Enforces YouTube ID sanity: 11 chars, allowed chars [A-Za-z0-9_-].
 -- Writes lines in format: "youtube <ID>"
