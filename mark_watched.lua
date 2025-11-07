@@ -25,6 +25,25 @@
 local mp = require "mp"
 local msg = require "mp.msg"
 
+-- Check if the first argument is a YouTube URL before running the rest of the script.
+
+local function is_youtube_url(url)
+    -- Basic pattern matching to check for YouTube URL
+    return url:match("^https?://([%w%.]*youtube%.com/watch%?") 
+        or url:match("^https?://youtu%.be/")
+end
+
+local args = {...}
+local input = args[1]
+
+if not input or not is_youtube_url(input) then
+    mp.msg.info("Input is not a YT URL. Skipping run.")
+    return
+end
+
+-- Your script logic here for YouTube URLs only
+mp.msg.info("YT URL detected. Running script...")
+
 -- USER CONFIGURATION
 -- SET YOUR YT-DLP ARCHIVE FILE PROPER PATH/LOCATION
 local ARCHIVE_FILE = "/path/to/ytdlp_archive.txt"
