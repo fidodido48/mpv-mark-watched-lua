@@ -20,8 +20,9 @@
 -- Appends YouTube IDs on EOF or manual keypress to the archive file effectively marking them watched.
 -- Deduplicates across mpv sessions by reading existing file on startup.
 -- Enforces YouTube ID sanity: 11 chars, allowed chars [A-Za-z0-9_-].
--- Writes lines in format: "youtube <ID>"
+-- Writes to yt-dlp's archive file in proper format: "youtube <ID>"
 
+local version = "0.0.4"
 local mp = require "mp"
 local msg = require "mp.msg"
 local utils = require "mp.utils"
@@ -201,4 +202,5 @@ mp.register_event("end-file", function(ev) if ev and ev.reason ~= "eof" then sav
 
 -- initial
 load_existing()
+msg.info("Version: "..version)
 msg.info("Loaded archive file: "..ARCHIVE_FILE)
